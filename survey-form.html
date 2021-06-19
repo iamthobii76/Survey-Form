@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="survey-form.css">
+    <title>Document</title>
+</head>
+<body>
+        <h1 id="title">SurveyMe</h1>
+        <p id="description"><i>Lipsum dolor sit amet consectetur adipisicing elit. Odit</i></p>
+        <form  id="survey-form">
+<hr>
+            <label id="name-label">Name</label>
+            <input id="name" type="name" placeholder="Enter Your Name Here" required><br>
+            <label id="email-label">E-Mail</label>
+            <input id="email" type="email" placeholder="Enter Your E-Mail Here" required><br>
+            <label id="number-label">Age</label>
+            <input id="number" type="number" placeholder="Enter Your Age Here" max="99" min="12" required><br>
+            <label>Which option best describes your current role?</label>
+            <input list="other-options" name="options" placeholder="Choose Your Suit" required>
+            <datalist id="other-options">
+             <option value="Student"></option>
+             <option value="Full Time Job"></option>
+             <option value="Full Time Learner"></option>
+             <option value="Prefer Not To Say"></option>
+             <option value="Others"></option>
+            </datalist>
+<hr>
+            <label for="options">Would you recommend freeCodeCamp to a friend?</label>
+            <label for="radio"><input value="radio" type="radio" name="Not Sure">Not Sure</label>
+            <label for="radio"><input value="radio" required type="radio" name="Not Sure">Not Sure</label>
+            <label for="radio"><input value="radio" type="radio" name="Not Sure">Not Sure</label>
+<hr>
+            <label for="options-feature">What is your favorite feature of freeCodeCamp?</label>
+            <input list="dropdown" name="dropdown-options" placeholder="Choose Recently Used Feature" required>
+            <datalist id="dropdown">
+                <option value="Community"></option>
+                <option value="Community"></option>
+                <option value="Community"></option>
+                <option value="Community"></option>
+            </datalist>
+<hr>
+            <label id="checkbox-label">What would you like to see improved?</label>
+           <label>ADSFSF  <input type="checkbox" value="checkboxs"></label>
+           <label>ADSFSF  <input type="checkbox" value="checkboxs"></label>
+           <label>ADSFSF  <input type="checkbox" value="checkboxs"></label>
+             
+<hr>
+           <textarea required placeholder="Enetr Your Comment..." name="textarea" id="textarea" cols="30" rows="10">Any comment you have should go here</textarea>
+            <button id="submit">Submit</button>
+<hr>
+        </form>
+</body>
+</html>
